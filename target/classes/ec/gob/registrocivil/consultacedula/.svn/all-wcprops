@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/rh-snap-fuse/!svn/ver/50/3.Construccion/src/esb-consultarCedula-service/target/classes/ec/gob/registrocivil/consultacedula
+END
+Cedula.class
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/rh-snap-fuse/!svn/ver/49/3.Construccion/src/esb-consultarCedula-service/target/classes/ec/gob/registrocivil/consultacedula/Cedula.class
+END
+ObjectFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/rh-snap-fuse/!svn/ver/50/3.Construccion/src/esb-consultarCedula-service/target/classes/ec/gob/registrocivil/consultacedula/ObjectFactory.class
+END
+package-info.class
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/rh-snap-fuse/!svn/ver/49/3.Construccion/src/esb-consultarCedula-service/target/classes/ec/gob/registrocivil/consultacedula/package-info.class
+END
+BusquedaPorCedulaResponse.class
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/rh-snap-fuse/!svn/ver/49/3.Construccion/src/esb-consultarCedula-service/target/classes/ec/gob/registrocivil/consultacedula/BusquedaPorCedulaResponse.class
+END
+BusquedaPorCedula.class
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/rh-snap-fuse/!svn/ver/49/3.Construccion/src/esb-consultarCedula-service/target/classes/ec/gob/registrocivil/consultacedula/BusquedaPorCedula.class
+END
+ConsultarCedulaService.class
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/rh-snap-fuse/!svn/ver/49/3.Construccion/src/esb-consultarCedula-service/target/classes/ec/gob/registrocivil/consultacedula/ConsultarCedulaService.class
+END
+ConsultarCedulaServiceService.class
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/rh-snap-fuse/!svn/ver/49/3.Construccion/src/esb-consultarCedula-service/target/classes/ec/gob/registrocivil/consultacedula/ConsultarCedulaServiceService.class
+END

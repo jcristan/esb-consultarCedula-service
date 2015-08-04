@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/rh-snap-fuse/!svn/ver/50/3.Construccion/src/esb-consultarCedula-service/src/main/java/ec/gob/registrocivil/consultacedula
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/rh-snap-fuse/!svn/ver/46/3.Construccion/src/esb-consultarCedula-service/src/main/java/ec/gob/registrocivil/consultacedula/package-info.java
+END
+BusquedaPorCedulaResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/rh-snap-fuse/!svn/ver/46/3.Construccion/src/esb-consultarCedula-service/src/main/java/ec/gob/registrocivil/consultacedula/BusquedaPorCedulaResponse.java
+END
+BusquedaPorCedula.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/rh-snap-fuse/!svn/ver/46/3.Construccion/src/esb-consultarCedula-service/src/main/java/ec/gob/registrocivil/consultacedula/BusquedaPorCedula.java
+END
+ConsultarCedulaService.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/rh-snap-fuse/!svn/ver/50/3.Construccion/src/esb-consultarCedula-service/src/main/java/ec/gob/registrocivil/consultacedula/ConsultarCedulaService.java
+END
+ConsultarCedulaServiceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/rh-snap-fuse/!svn/ver/50/3.Construccion/src/esb-consultarCedula-service/src/main/java/ec/gob/registrocivil/consultacedula/ConsultarCedulaServiceService.java
+END
+Cedula.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/rh-snap-fuse/!svn/ver/46/3.Construccion/src/esb-consultarCedula-service/src/main/java/ec/gob/registrocivil/consultacedula/Cedula.java
+END
+ObjectFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/rh-snap-fuse/!svn/ver/50/3.Construccion/src/esb-consultarCedula-service/src/main/java/ec/gob/registrocivil/consultacedula/ObjectFactory.java
+END

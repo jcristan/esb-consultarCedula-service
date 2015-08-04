@@ -1,0 +1,87 @@
+
+package ec.gob.informatica.consultacontrasenaws;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for consultarContrasenaSalida complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="consultarContrasenaSalida">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="contrasena" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="mensaje" type="{http://www.informatica.gob.ec/ConsultaContrasenaWS}mensajeError" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "consultarContrasenaSalida", propOrder = {
+    "contrasena",
+    "mensaje"
+})
+public class ConsultarContrasenaSalida {
+
+    protected String contrasena;
+    protected MensajeError mensaje;
+
+    /**
+     * Gets the value of the contrasena property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    /**
+     * Sets the value of the contrasena property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setContrasena(String value) {
+        this.contrasena = value;
+    }
+
+    /**
+     * Gets the value of the mensaje property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link MensajeError }
+     *     
+     */
+    public MensajeError getMensaje() {
+        return mensaje;
+    }
+
+    /**
+     * Sets the value of the mensaje property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link MensajeError }
+     *     
+     */
+    public void setMensaje(MensajeError value) {
+        this.mensaje = value;
+    }
+
+}

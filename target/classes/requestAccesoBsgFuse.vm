@@ -1,0 +1,13 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sei="http://bsg.gob.ec/AccesoBSGService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sei:ValidarPermiso>
+         <!--Optional:-->
+         <ValidarPermisoPeticion>
+         <Cedula>${headers.cedula}</Cedula>
+         <!--Optional:-->
+         <Urlsw>https://www.bsg.gob.ec/sw/RC/BSGSW01_Consultar_Cedula?wsdl</Urlsw>
+         </ValidarPermisoPeticion>
+      </sei:ValidarPermiso>
+   </soapenv:Body>
+</soapenv:Envelope>

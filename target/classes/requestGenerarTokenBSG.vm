@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gen="http://informatica.gob.ec/GenerarTokenService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <gen:recibeUsuario>
+         <usuario>${headers.usuario}</usuario>
+         <contrasenia>${headers.contrasenia}</contrasenia>
+      </gen:recibeUsuario>
+   </soapenv:Body>
+</soapenv:Envelope>

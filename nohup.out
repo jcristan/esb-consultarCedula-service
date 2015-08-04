@@ -1,0 +1,78 @@
+================================
+=
+= SOAPUI_HOME = /home/anarvaez/SmartBear/SoapUI-5.0.0
+=
+================================
+Configuring log4j from [/home/anarvaez/SmartBear/SoapUI-5.0.0/bin/soapui-log4j.xml]
+05:49:38,543 INFO  [DefaultSoapUICore] initialized soapui-settings from [/home/anarvaez/soapui-settings.xml]
+05:49:39,404 INFO  [WorkspaceImpl] Loading workspace from [/home/anarvaez/default-soapui-workspace.xml]
+05:49:39,490 INFO  [WsdlProject] Loaded project from [file:/home/anarvaez/bpms/integration/kie-remote-example-master/service-impl/src/test/soapui/Greeter-soapui-project.xml]
+05:49:39,956 INFO  [WsdlProject] Loaded project from [file:/home/anarvaez/POC-DINARDAP-ws-civil-soapui-project.xml]
+05:49:39,961 INFO  [WsdlProject] Loaded project from [file:/home/anarvaez/POC-DINARDAP-ws-civil-soapui-project.xml]
+05:49:39,963 INFO  [WsdlProject] Loaded project from [file:/home/anarvaez/POC-DINARDAP-ws-civil-soapui-project.xml]
+05:49:39,973 INFO  [WsdlProject] Loaded project from [file:/home/anarvaez/ws-civil-soapui-project.xml]
+05:49:39,985 INFO  [WsdlProject] Loaded project from [file:/home/anarvaez/ws-cne-soapui-project.xml]
+05:49:39,996 INFO  [WsdlProject] Loaded project from [file:/home/anarvaez/ws-senescyt-soapui-project.xml]
+05:49:40,007 INFO  [WsdlProject] Loaded project from [file:/home/anarvaez/mockconsultaTituloPortTypeSoapBinding-soapui-project.xml]
+05:49:40,009 INFO  [WsdlProject] Loaded project from [file:/home/anarvaez/dinardap-soapui-project.xml]
+05:49:40,158 INFO  [SoapUI] Used java version: 1.7.0_40
+Prism ES2 Error - nInitialize: glXChooseFBConfig failed
+05:51:34,514 INFO  [WsdlProject] Loaded project from [file:/home/anarvaez/workspace/4.Pruebas/snap-consulta-cedula-test-soapui-project.xml]
+05:51:34,571 INFO  [WorkspaceImpl] Saved workspace to [/home/anarvaez/default-soapui-workspace.xml]
+05:51:47,458 INFO  [WsdlProject] Loaded project from [file:/home/anarvaez/workspace/4.Pruebas/snap-moks-test-soapui-project.xml]
+05:51:47,478 INFO  [WorkspaceImpl] Saved workspace to [/home/anarvaez/default-soapui-workspace.xml]
+05:51:59,670 DEBUG [AbstractDefinitionContext] Loading Definition...
+05:51:59,705 DEBUG [WsdlInterfaceDefinition] Loading WSDL: file:\C:\Users\Assert\Downloads\BSG06_Consulta_Contrasenia(2).wsdl
+05:51:59,705 DEBUG [AbstractWsdlDefinitionLoader] Returning baseInputSource [file:\C:\Users\Assert\Downloads\BSG06_Consulta_Contrasenia(2).wsdl]
+Retrieving document at 'file:\C:\Users\Assert\Downloads\BSG06_Consulta_Contrasenia(2).wsdl'.
+05:51:59,913 INFO  [SchemaUtils] Added default schema from file:/home/anarvaez/SmartBear/SoapUI-5.0.0/bin/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xop.xsd with targetNamespace http://www.w3.org/2004/08/xop/include
+05:52:00,014 INFO  [SchemaUtils] Added default schema from file:/home/anarvaez/SmartBear/SoapUI-5.0.0/bin/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/XMLSchema.xsd with targetNamespace http://www.w3.org/2001/XMLSchema
+05:52:00,020 INFO  [SchemaUtils] Added default schema from file:/home/anarvaez/SmartBear/SoapUI-5.0.0/bin/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xml.xsd with targetNamespace http://www.w3.org/XML/1998/namespace
+05:52:00,020 INFO  [SchemaUtils] Added default schema from file:/home/anarvaez/SmartBear/SoapUI-5.0.0/bin/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/swaref.xsd with targetNamespace http://ws-i.org/profiles/basic/1.1/xsd
+05:52:00,025 INFO  [SchemaUtils] Added default schema from file:/home/anarvaez/SmartBear/SoapUI-5.0.0/bin/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xmime200505.xsd with targetNamespace http://www.w3.org/2005/05/xmlmime
+05:52:00,026 INFO  [SchemaUtils] Added default schema from file:/home/anarvaez/SmartBear/SoapUI-5.0.0/bin/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xmime200411.xsd with targetNamespace http://www.w3.org/2004/11/xmlmime
+05:52:00,029 INFO  [SchemaUtils] Added default schema from file:/home/anarvaez/SmartBear/SoapUI-5.0.0/bin/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope.xsd with targetNamespace http://schemas.xmlsoap.org/soap/envelope/
+05:52:00,040 INFO  [SchemaUtils] Added default schema from file:/home/anarvaez/SmartBear/SoapUI-5.0.0/bin/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd with targetNamespace http://schemas.xmlsoap.org/soap/encoding/
+05:52:00,044 INFO  [SchemaUtils] Added default schema from file:/home/anarvaez/SmartBear/SoapUI-5.0.0/bin/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope12.xsd with targetNamespace http://www.w3.org/2003/05/soap-envelope
+05:52:00,051 INFO  [SchemaUtils] Added default schema from file:/home/anarvaez/SmartBear/SoapUI-5.0.0/bin/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd with targetNamespace http://www.w3.org/2003/05/soap-encoding
+05:52:00,053 INFO  [SchemaUtils] Loading schema types from [file:\C:\Users\Assert\Downloads\BSG06_Consulta_Contrasenia(2).wsdl]
+05:52:00,055 INFO  [SchemaUtils] Getting schema file:\C:\Users\Assert\Downloads\BSG06_Consulta_Contrasenia(2).wsdl
+05:52:00,354 DEBUG [AbstractDefinitionContext] Loaded Definition: ok
+05:52:00,389 INFO  [WsdlMockDispatcher] Mounted WSDL for interface [ConsultaContrasenaWSSoapBinding] at [/mockConsultaContrasenaWSSoapBinding?WSDL]
+05:52:00,462 INFO  [JettyMockEngine] Started mockService [ConsultaContrasenaWSSoapBinding MockService] on port [8088] at path [/mockConsultaContrasenaWSSoapBinding]
+05:52:06,040 DEBUG [AbstractDefinitionContext] Loading Definition...
+05:52:06,040 DEBUG [WsdlInterfaceDefinition] Loading WSDL: https://www.bsg.gob.ec/sw/STI/BSGSW08_Acceder_BSG?wsdl
+05:52:06,048 DEBUG [AbstractWsdlDefinitionLoader] Returning baseInputSource [https://www.bsg.gob.ec/sw/STI/BSGSW08_Acceder_BSG?wsdl]
+Retrieving document at 'https://www.bsg.gob.ec/sw/STI/BSGSW08_Acceder_BSG?wsdl'.
+05:52:06,096 INFO  [SchemaUtils] Loading schema types from [https://www.bsg.gob.ec/sw/STI/BSGSW08_Acceder_BSG?wsdl]
+05:52:06,097 INFO  [SchemaUtils] Getting schema https://www.bsg.gob.ec/sw/STI/BSGSW08_Acceder_BSG?wsdl
+05:52:06,414 DEBUG [AbstractDefinitionContext] Loaded Definition: ok
+05:52:06,527 INFO  [WsdlMockDispatcher] Mounted WSDL for interface [AccesoBSGServiceSoapBinding] at [/mockAccesoBSGServiceSoapBinding?WSDL]
+05:52:06,527 INFO  [JettyMockEngine] Started mockService [AccesoBSGServiceSoapBinding MockService] on port [8088] at path [/mockAccesoBSGServiceSoapBinding]
+05:52:10,989 DEBUG [AbstractDefinitionContext] Loading Definition...
+05:52:10,989 DEBUG [WsdlInterfaceDefinition] Loading WSDL: http://webservice02.registrocivil.gob.ec:8080/WEBRegCivCedula/WSRegistroCivilConsultaCedula?wsdl
+05:52:10,989 DEBUG [AbstractWsdlDefinitionLoader] Returning baseInputSource [http://webservice02.registrocivil.gob.ec:8080/WEBRegCivCedula/WSRegistroCivilConsultaCedula?wsdl]
+Retrieving document at 'http://webservice02.registrocivil.gob.ec:8080/WEBRegCivCedula/WSRegistroCivilConsultaCedula?wsdl'.
+Retrieving schema at 'http://webservice02.registrocivil.gob.ec:8080/WEBRegCivCedula/WSRegistroCivilConsultaCedula?xsd=1', relative to 'http://webservice02.registrocivil.gob.ec:8080/WEBRegCivCedula/WSRegistroCivilConsultaCedula?wsdl'.
+05:52:11,024 DEBUG [AbstractWsdlDefinitionLoader] Returning latest import URI [http://webservice02.registrocivil.gob.ec:8080/WEBRegCivCedula/WSRegistroCivilConsultaCedula?xsd=1]
+05:52:11,087 INFO  [SchemaUtils] Loading schema types from [http://webservice02.registrocivil.gob.ec:8080/WEBRegCivCedula/WSRegistroCivilConsultaCedula?wsdl]
+05:52:11,087 INFO  [SchemaUtils] Getting schema http://webservice02.registrocivil.gob.ec:8080/WEBRegCivCedula/WSRegistroCivilConsultaCedula?wsdl
+05:52:11,093 INFO  [SchemaUtils] Getting schema http://webservice02.registrocivil.gob.ec:8080/WEBRegCivCedula/WSRegistroCivilConsultaCedula?xsd=1
+05:52:11,455 DEBUG [AbstractDefinitionContext] Loaded Definition: ok
+05:52:11,677 INFO  [WsdlMockDispatcher] Mounted WSDL for interface [WSRegistroCivilConsultaCedulaPortBinding] at [/mockWSRegistroCivilConsultaCedulaPortBinding?WSDL]
+05:52:11,678 INFO  [JettyMockEngine] Started mockService [WSRegistroCivilConsultaCedulaPortBinding MockService] on port [8088] at path [/mockWSRegistroCivilConsultaCedulaPortBinding]
+07:15:14,223 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ConsultarCedulaServiceServiceSoapBinding.consultar:Request 1] in 132ms (47 bytes)
+08:02:34,245 INFO  [DefaultSoapUICore] Settings saved to [/home/anarvaez/soapui-settings.xml]
+08:02:34,262 INFO  [WsdlProject] Saved project [Greeter] to [/home/anarvaez/bpms/integration/kie-remote-example-master/service-impl/src/test/soapui/Greeter-soapui-project.xml - 10767 bytes
+08:02:34,265 INFO  [WsdlProject] Saved project [POC/DINARDAP/ws_civil] to [/home/anarvaez/POC-DINARDAP-ws-civil-soapui-project.xml - 343 bytes
+08:02:37,950 INFO  [WsdlProject] Saved project [ws_civil] to [/home/anarvaez/ws-civil-soapui-project.xml - 13985 bytes
+08:02:37,955 INFO  [WsdlProject] Saved project [ws_cne] to [/home/anarvaez/ws-cne-soapui-project.xml - 10649 bytes
+08:02:37,961 INFO  [WsdlProject] Saved project [ws_senescyt] to [/home/anarvaez/ws-senescyt-soapui-project.xml - 11183 bytes
+08:02:37,961 INFO  [WsdlProject] Saved project [mockconsultaTituloPortTypeSoapBinding] to [/home/anarvaez/mockconsultaTituloPortTypeSoapBinding-soapui-project.xml - 359 bytes
+08:02:37,963 INFO  [WsdlProject] Saved project [dinardap] to [/home/anarvaez/dinardap-soapui-project.xml - 4660 bytes
+08:02:37,965 INFO  [WsdlProject] Saved project [snap-consulta-cedula-test] to [/home/anarvaez/workspace/4.Pruebas/snap-consulta-cedula-test-soapui-project.xml - 7758 bytes
+08:02:37,973 INFO  [WsdlProject] Saved project [snap-moks-test] to [/home/anarvaez/workspace/4.Pruebas/snap-moks-test-soapui-project.xml - 31355 bytes
+08:02:37,975 INFO  [WorkspaceImpl] Saved workspace to [/home/anarvaez/default-soapui-workspace.xml]
+exiting..
+1434724270230	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server localhost:10.0.

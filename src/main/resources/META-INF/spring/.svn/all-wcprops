@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/rh-snap-fuse/!svn/ver/50/3.Construccion/src/esb-consultarCedula-service/src/main/resources/META-INF/spring
+END
+camel-context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/rh-snap-fuse/!svn/ver/50/3.Construccion/src/esb-consultarCedula-service/src/main/resources/META-INF/spring/camel-context.xml
+END

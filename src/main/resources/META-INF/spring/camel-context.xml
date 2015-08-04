@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xmlns:cxf="http://camel.apache.org/schema/cxf" xmlns:camel="http://camel.apache.org/schema/spring"
+	xmlns:osgi="http://www.springframework.org/schema/osgi" xmlns:osgix="http://www.springframework.org/schema/osgi-compendium"
+	xmlns:jaxrs="http://cxf.apache.org/jaxrs" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd
+       http://camel.apache.org/schema/cxf http://camel.apache.org/schema/cxf/camel-cxf.xsd
+       http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
+       http://www.springframework.org/schema/osgi-compendium http://www.springframework.org/schema/osgi-compendium/spring-osgi-compendium.xsd
+       http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
+
+	<!-- Properties de configuracion del servidor de N4. Agrego los nombres 
+		de los filtros correspondientes a Customer. In Fuse ESB, every persistentID, 
+		is implicitly associated with a file named persistentID.cfg in the $FUSE_HOME/etc/ 
+		directory. -->
+	<osgix:cm-properties id="properties" persistent-id="ec.gob.bsg.bus">
+	</osgix:cm-properties>
+
+	<!-- Agrego properties to Spring Context -->
+	<context:property-placeholder
+		properties-ref="properties" />
+	<context:annotation-config />
+
+
+    <bean id="myPasswordCallback" class="ec.gob.sti.bus.ServerPasswordCallback">
+       <property name="addressBSG" value="${urlServicioEnBsg.ConsultarCedula}"/>
+    </bean>
+
+	<bean id="wss4jInInterceptor" class="org.apache.cxf.ws.security.wss4j.WSS4JInInterceptor">
+        <constructor-arg>
+            <map>
+                <entry key="action" value="UsernameToken Timestamp"/>
+                <entry key="passwordType" value="PasswordDigest"/>
+                <entry key="timeToLive" value="${timeToLive.ConsultarCedula}"/>
+                <entry key="passwordCallbackRef">
+                            <ref bean="myPasswordCallback"/>
+                </entry>
+            </map>
+        </constructor-arg>
+    </bean>
+	
+    <cxf:cxfEndpoint id="ConsultarCedulaServiceEndpoint"
+		serviceClass="ec.gob.registrocivil.consultacedula.ConsultarCedulaService" address="/consultarCedulaService">
+		<cxf:inInterceptors>
+            <ref bean="wss4jInInterceptor"/>
+        </cxf:inInterceptors>
+	</cxf:cxfEndpoint>
+	
+	<!-- connect to the local ActiveMQ broker -->
+    <bean id="activemq" class="org.apache.activemq.camel.component.ActiveMQComponent">
+        <property name="brokerURL" value="tcp://${amq.host}:${amq.port}"/>
+		<property name="userName" value="${amq.userName}"/>
+        <property name="password" value="${amq.password}"/>
+    </bean>
+  
+	<!-- Camel -->
+	<camel:camelContext id="ConsultarCedulaRouteServiceCamelContext"
+		streamCache="true">
+
+		<!-- Agrego properties to Camel Context -->
+		<camel:propertyPlaceholder id="camelProperties"
+			location="ref:properties" />
+		<!-- Agrego configuracion de ruteo to Camel Context -->
+		<camel:routeBuilder ref="consultaCedulaRouteBean" />
+		
+		<camel:endpoint id="invokeLogService" uri="http://localhost:8181/cxf/logSnapService" />
+		   
+		<camel:endpoint id="invokeAccederService" uri="${accederBsg.url}" />
+		<camel:endpoint id="invokeTokenService" uri="${consultarToken.url}" />
+		<camel:endpoint id="invokeConsultarContraseniaService" uri="${consultarContraseniaService.uri}" />
+		<camel:endpoint id="invokeconsultarCedulaService" uri="${consultarCedula.url}" />
+		
+		<camel:endpoint id="invokeAccederBsgFuseService" uri="${esb.accesobsg.fuse.url}" />
+		
+	</camel:camelContext>
+	
+
+	<bean id="consultaCedulaRouteBean" class="com.snap.esb.consulta.cedula.route.ConsultaCedulaRoute" />
+	
+		<!-- this is the JDBC datasource postgrestsql -->
+	<bean id="snapdb"
+		class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+		<property name="driverClass" value="org.postgresql.Driver" />
+		<property name="url"
+			value="jdbc:postgresql://${snap.db.host}:${snap.db.port}/${snap.db.name}" />
+		<property name="username" value="${snap.db.user}" />
+		<property name="password" value="${snap.db.password}" />
+	</bean>
+	
+	<!--    jdbc -->
+	
+	<bean id="snapJdbcPreProcessor"
+		class="com.snap.esb.consulta.cedula.jdbc.processor.SnapJdbcPreProcessor">
+	</bean>
+	
+    <bean id="snapJdbcPostProcessor"
+		class="com.snap.esb.consulta.cedula.jdbc.processor.SnapJdbcPostProcessor">
+	</bean>
+	
+		<bean id="messageConsultarCedulaProcessor"
+		class="com.snap.esb.consulta.cedula.message.processor.MessageConsultarCedulaProcessor">
+	</bean>	
+	
+</beans>

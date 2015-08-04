@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/rh-snap-fuse/!svn/ver/49/3.Construccion/src/esb-consultarCedula-service/target/classes/com/snap/esb/consulta/cedula/jdbc/processor
+END
+SnapJdbcPreProcessor.class
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/rh-snap-fuse/!svn/ver/49/3.Construccion/src/esb-consultarCedula-service/target/classes/com/snap/esb/consulta/cedula/jdbc/processor/SnapJdbcPreProcessor.class
+END
+SnapJdbcPostProcessor.class
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/rh-snap-fuse/!svn/ver/49/3.Construccion/src/esb-consultarCedula-service/target/classes/com/snap/esb/consulta/cedula/jdbc/processor/SnapJdbcPostProcessor.class
+END

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.informatica.gob.ec/ConsultaContrasenaWS" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="ConsultaContrasenaWS" targetNamespace="http://www.informatica.gob.ec/ConsultaContrasenaWS">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.informatica.gob.ec/ConsultaContrasenaWS" elementFormDefault="unqualified" targetNamespace="http://www.informatica.gob.ec/ConsultaContrasenaWS" version="1.0">
+
+  <xs:element name="consultarContrasena" type="tns:consultarContrasena"/>
+
+  <xs:element name="consultarContrasenaResponse" type="tns:consultarContrasenaResponse"/>
+
+  <xs:complexType name="consultarContrasena">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="consultarContrasenaEntrada" type="tns:consultarContrasenaEntrada"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="consultarContrasenaEntrada">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cedula" type="xs:string"/>
+      <xs:element minOccurs="0" name="url" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="consultarContrasenaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:consultarContrasenaSalida"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="consultarContrasenaSalida">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="contrasena" type="xs:string"/>
+      <xs:element minOccurs="0" name="mensaje" type="tns:mensajeError"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="mensajeError">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodError" type="xs:string"/>
+      <xs:element minOccurs="0" name="DesError" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="consultarContrasenaResponse">
+    <wsdl:part element="tns:consultarContrasenaResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarContrasena">
+    <wsdl:part element="tns:consultarContrasena" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="BSG06_Consulta_Contrasenia">
+    <wsdl:operation name="consultarContrasena">
+      <wsdl:input message="tns:consultarContrasena" name="consultarContrasena">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarContrasenaResponse" name="consultarContrasenaResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ConsultaContrasenaWSSoapBinding" type="tns:BSG06_Consulta_Contrasenia">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="consultarContrasena">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarContrasena">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarContrasenaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ConsultaContrasenaWS">
+    <wsdl:port binding="tns:ConsultaContrasenaWSSoapBinding" name="ConsultaContrasenaWSSoapPort">
+      <soap:address location="http://srvprbews.bsg.int:80/sbsg-sw/ConsultaContrasenaWS/BSG06_Consulta_Contrasenia"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://www.informatica.gob.ec/ConsultaContrasenaWS">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <con:consultarContrasena>
+         <consultarContrasenaEntrada>
+            <cedula>${headers.username}</cedula>
+            <url>${headers.urlCC}</url>
+         </consultarContrasenaEntrada>
+      </con:consultarContrasena>
+   </soapenv:Body>
+</soapenv:Envelope>

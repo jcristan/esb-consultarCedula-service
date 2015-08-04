@@ -1,0 +1,23 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://www.registrocivil.gob.ec/ConsultaCedula">
+   <soapenv:Header>
+    <wss:Security xmlns:wss="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wss:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wss:Username>${headers.Username}</wss:Username>
+            <wss:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">${headers.digest}</wss:Password>
+            <wss:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">${headers.nonce}</wss:Nonce>
+            <wsu:Created xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">${headers.fecha}</wsu:Created>
+        </wss:UsernameToken>
+	   <wsu:Timestamp xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+	   <wsu:Created>${headers.fecha}</wsu:Created>
+	   <wsu:Expires>${headers.fechaf}</wsu:Expires>
+	   </wsu:Timestamp>        
+   </wss:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <con:BusquedaPorCedula>
+         <Cedula>${headers.cedula}</Cedula>
+         <Usuario>${headers.Usuario}</Usuario>
+         <Contrasenia>${headers.Contrasenia}</Contrasenia>
+      </con:BusquedaPorCedula>
+   </soapenv:Body>
+</soapenv:Envelope>

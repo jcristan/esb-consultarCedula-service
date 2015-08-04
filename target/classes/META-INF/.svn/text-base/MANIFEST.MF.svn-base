@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1438197432497
+Build-Jdk: 1.6.0_45
+Built-By: anarvaez
+Bundle-Description: Servicio JBoss Fuse :: Administración Pública
+Bundle-ManifestVersion: 2
+Bundle-Name: Servicio ws :: Administración Pública
+Bundle-SymbolicName: esb-consultarCedula-service
+Bundle-Version: 1.0.35
+Created-By: Apache Maven Bundle Plugin
+Import-Package: javax.jws,javax.security.auth.callback,javax.xml.bind,ja
+ vax.xml.bind.annotation,javax.xml.namespace,javax.xml.ws,org.apache.act
+ ivemq.camel.component,org.apache.camel;version="[2.12,3)",org.apache.ca
+ mel.builder;version="[2.12,3)",org.apache.camel.builder.xml;version="[2
+ .12,3)",org.apache.camel.component.cxf;version="[2.12,3)",org.apache.ca
+ mel.model;version="[2.12,3)",org.apache.commons.logging,org.apache.cxf.
+ binding.soap;version="[2.7,3)",org.apache.cxf.ws.security.wss4j;version
+ ="[2.7,3)",org.apache.log4j;version="[1.2,2)",org.apache.ws.security;ve
+ rsion="[1.6,2)",org.postgresql;version="[9.1,10)",org.springframework.j
+ dbc.datasource;version="[3.1,4)",org.w3c.dom
+Tool: Bnd-1.50.0
